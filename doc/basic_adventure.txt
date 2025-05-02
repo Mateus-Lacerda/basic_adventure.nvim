@@ -1,4 +1,4 @@
-*basic_adventure.txt*    Plugin do Neovim para BasicAdventure v1.0.0 por Mateus-Lacerda
+*basic_adventure.txt*                basic_adventure.nvim ‑‑ Version 1.0.0     2025‑05‑02
 
 ==============================================================================
 INTRODUÇÃO                                                        *basic_adventure*
