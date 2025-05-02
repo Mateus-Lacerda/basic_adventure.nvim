@@ -21,7 +21,7 @@ Adicione o seguinte bloco ao seu arquivo de configuração do Neovim:
 
 ```lua
 use {
-    'Mateus-Lacerda/BasicAdventure.nvim',
+    'Mateus-Lacerda/basic_adventure.nvim',
     config = function()
         require('basic_adventure')
     end
@@ -36,7 +36,7 @@ Adicione o seguinte bloco ao seu arquivo de configuração do Neovim:
 
 ```lua
 {
-    'Mateus-Lacerda/BasicAdventure.nvim',
+    'Mateus-Lacerda/basic_adventure.nvim',
     config = function()
         require('basic_adventure')
     end

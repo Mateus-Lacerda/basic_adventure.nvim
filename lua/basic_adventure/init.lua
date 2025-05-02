@@ -8,7 +8,7 @@ local function runtime_file(path)
     return (#files > 0) and files[1] or nil
 end
 
-local game_path = runtime_file("lua/basic_adventure/python3/main.py")
+local game_path = runtime_file("python3/main.py")
 assert(game_path, "python3/basic_adventure/main.py not found in runtimepath")
 
 -- dirname that works on all OS
