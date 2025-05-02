@@ -42,6 +42,9 @@ local function create_floating_terminal()
     vim.fn.jobstart({ "python3", game_path }, {
         cwd  = game_dir,
         term = true,
+        env = {
+            PYTHONDONTWRITEBYTECODE = "1",
+        }
     })
 
     vim.cmd("startinsert")
