@@ -1,21 +1,60 @@
-# BasicAdventure
-How to run:
+# BasicAdventure.nvim
 
-WINDOWS:
-________
-Download all files and run the .exe file
+BasicAdventure.nvim é um plugin para Neovim que permite jogar um jogo de aventura diretamente no editor. Feito em Python.
 
+## Requisitos
 
-Other platforms:
-________________
-Download all the ".py" files to a single folder
+- **Python 3.10 ou superior**: Certifique-se de que o Python está instalado no seu sistema.
+- **Pygame**: O plugin requer o Pygame instalado no ambiente Python global ou em uma virtual environment (venv). Você pode instalar o Pygame com o comando:
 
-You must have python 3.10 or above
+```bash
+pip install pygame
+```
 
-Install the required libraries with the command "pip install -r requirements.txt" in the terminal
+> **Nota**: Se você estiver usando uma venv, certifique-se de abrir o Neovim dentro dela para que o Pygame seja detectado corretamente.
 
-Open terminal
+## Instalação
 
-Find the folder in the cmd with the command "cd Folder/"
+### Usando [packer.nvim](https://github.com/wbthomason/packer.nvim)
 
-Run "python3 main.py"
+Adicione o seguinte bloco ao seu arquivo de configuração do Neovim:
+
+```lua
+use {
+    'Mateus-Lacerda/BasicAdventure.nvim',
+    config = function()
+        require('basic_adventure')
+    end
+}
+```
+
+Após adicionar, execute `:PackerSync` no Neovim para instalar o plugin.
+
+### Usando [lazy.nvim](https://github.com/folke/lazy.nvim)
+
+Adicione o seguinte bloco ao seu arquivo de configuração do Neovim:
+
+```lua
+{
+    'Mateus-Lacerda/BasicAdventure.nvim',
+    config = function()
+        require('basic_adventure')
+    end
+}
+```
+
+Após adicionar, execute `:Lazy sync` no Neovim para instalar o plugin.
+
+## Como usar
+
+Após instalar o plugin, você pode iniciar o jogo com o comando:
+
+```vim
+:BasicAdventure
+```
+
+Certifique-se de que o Pygame está instalado e acessível no ambiente Python que o Neovim está utilizando.
+
+## Contribuições
+
+Por favor, sinta-se à vontade para abrir issues ou pull requests no repositório. Todas as contribuições são bem-vindas!
