@@ -1,0 +1,61 @@
+*basic_adventure.txt*    Plugin do Neovim para BasicAdventure v1.0.0 por Mateus-Lacerda
+
+==============================================================================
+INTRODUÇÃO                                                        *basic_adventure*
+
+BasicAdventure é um plugin para Neovim que permite executar o jogo "BasicAdventure"
+diretamente do editor. Ele utiliza Python 3 e Lua para integrar o jogo ao Neovim.
+
+==============================================================================
+REQUISITOS                                                        *basic_adventure-requisitos*
+
+- Neovim com suporte a Python 3 (`:echo has('python3')` deve retornar 1).
+- Python 3.10 ou superior instalado no sistema.
+- Dependências do jogo instaladas via `pip install -r requirements.txt`.
+- Biblioteca `pygame` instalada no Python global para suporte a músicas.
+
+  Caso o `pygame` não esteja instalado, o plugin identificará automaticamente
+  e exibirá uma mensagem informando a ausência do suporte a músicas.
+
+==============================================================================
+INSTALAÇÃO                                                        *basic_adventure-instalacao*
+
+1. Certifique-se de que todas as dependências estão instaladas.
+2. Copie os arquivos do plugin para o diretório `~/.config/nvim/` ou utilize um gerenciador de plugins como `vim-plug` ou `packer.nvim`.
+
+Exemplo com `vim-plug`:
+
+```vim
+Plug 'Mateus-Lacerda/basic_adventure'
+```
+
+Após adicionar ao seu `init.vim` ou `init.lua`, execute `:PlugInstall`.
+
+==============================================================================
+COMANDOS                                                          *basic_adventure-comandos*
+
+O plugin fornece o seguinte comando:
+
+- `:BasicAdventure`
+  Inicia o jogo BasicAdventure diretamente no Neovim.
+
+==============================================================================
+CONFIGURAÇÃO                                                      *basic_adventure-configuracao*
+
+Nenhuma configuração adicional é necessária. O plugin é carregado automaticamente
+e o comando `:BasicAdventure` estará disponível.
+
+==============================================================================
+SUPORTE                                                           *basic_adventure-suporte*
+
+Para dúvidas ou problemas, entre em contato pelo repositório GitHub:
+https://github.com/Mateus-Lacerda/basic_adventure
+
+==============================================================================
+LICENÇA                                                           *basic_adventure-licenca*
+
+Este plugin é distribuído sob a licença MIT. Consulte o arquivo LICENSE no repositório
+para mais detalhes.
+
+==============================================================================
+FIM                                                               *basic_adventure-fim*
